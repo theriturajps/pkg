@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<HTML dir='ltr'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<link href='https://www.gitforge.in/' rel='openid.delegate'/>
+<link href='https://www.gitforge.in/' rel='canonical'/>
+<title>GitForge Package</title>
+<meta content='GitForge Package' name='description'/>
+<meta content='GitForge Assets' property='og:site_name'/>
+<meta content='GitForge Assets' property='og:title'/>
+<meta content='website' property='og:type'/>
+
+<style id='page-skin-1' type='text/css'><!--
+
+/* CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* HTML5 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;display:block;}*{margin:0;padding:0;}html{display:block;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{background:transparent;}table{border-collapse:collapse;border-spacing:0;}*,*:before, *:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}ins{background:#fff;}
+/* Layout */
+body {background:#eef3f6;font-family:'Changa', sans-serif;font-size:14px;font-weight:400;text-align:right;color:#000;margin:0;padding:0;overflow:hidden;direction:rtl}
+.navbar,.post-feeds,.feed-links{display:none;}.section,.widget{margin:0;padding:0;}strong,b{font-weight:bold;padding:0;}cite,em,i{font-style:italic;}a:link,a:visited {color:#333;text-decoration:none;transition:all .3s}a:hover,a:hover:visited {color:#2476e0}a img{border:none;border-width:0;outline:none;}img{max-width:100%;vertical-align:middle;border:0;}abbr,acronym{border-bottom:1px dotted;cursor:help;}sup,sub{vertical-align:baseline;position:relative;top:-.4em;font-size:86%;}sub{top:.4em;}small{font-size:86%;}kbd{display:inline-block;font-size:90%;color:#3498db;}mark{background-color:#ffce00;color:#182025;}p,blockquote,pre,table,figure,hr,form,ol,ul,dl{margin:1.5em 0;}hr{height:1px;border:none;background-color:#999;}code,kbd,pre,samp{font-family:monospace,monospace;}
+pre{white-space:pre;word-wrap:normal;overflow:auto;}blockquote{display:block;position:relative;background-color:#f2dca7;color:#5c5545;border-radius:4px;margin:.75em 0;padding:10px 15px}blockquote:before{content:"";width:0;height:0;position:absolute;bottom:100%;left:15px;border:7px solid transparent;border-color:transparent transparent #f2dca7}blockquote a{color:#34495e;}*:focus {outline:0!important;}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:normal;}h1{font-size:200%}h2{font-size:180%}h3{font-size:160%}h4{font-size:140%}h5{font-size:120%}h6{font-size:100%}
+.post-body h1{font-size:180%}.post-body h2{font-size:160%}.post-body h3{font-size:140%}.post-body h4{font-size:120%}.post-body h5{font-size:100%}.post-body h6{font-size:80%}
+input,button,select,textarea{font-size:100%;line-height:normal;vertical-align:baseline;}
+textarea{display:block;box-sizing:border-box;}
+input.placeholder_text,textarea.placeholder_text{color:#888}
+.post ul li span{position:relative;display:block;padding:0;margin:.5em 0 .5em 2em;text-decoration:none;}
+ol {counter-reset:li;list-style:none;padding:0;margin:0;}
+ol ol {margin: 0 0 0 2em;}
+.post ol li{position:relative;display:block;padding:0;margin:.5em 0 .5em 2em;background:#fff;text-decoration:none;}
+.post ol li:before {content:counter(li);counter-increment:li;position:absolute;left:-2.5em;height:2em;width:2em;text-align:center;}
+.post-body ul {position:relative;display:block;padding:0;margin:.5em 0 .5em 1.5em;text-decoration:none;}
+
+--></style>
+<style type='text/css'>
+.container{position:fixed;left:0;right:0;bottom:0;top:0;}
+.container:before{content:'';position:absolute;left:0;right:0;bottom:0;top:0;z-index:2;}
+#contain{background:rgba(52,152,219,0.9);padding:40px 0 0 0;position:absolute;z-index:9;top:32%;left:0;right:0;margin:auto;max-width:900px;color:#fff;box-shadow:0 19px 38px rgba(0,0,0,0.25), 0 15px 12px rgba(0,0,0,0.18);}
+#contain h1,#contain h2,#contain h3{text-align:center;font-weight:400;font-size:3em;line-height:1.6;text-transform:uppercase;}
+#contain p{text-align:center;font-size:2em;font-weight:400}
+#contain p.smallest{color:#fff;font-size:14px}
+#contain a{color:#fff;font-weight:600}#contain span{font-weight:400}
+#contain a:hover{color:#fff;text-decoration:line-through}
+#contain p.smallest a{color:#fff;font-weight:200}
+#contain p.smallest a:hover{text-decoration:line-through}
+/* Simple Title Animation */
+@keyframes draw{0%{width:0%}100%{width:110%}}
+@keyframes draw-bottom{0%{width:0%}100%{width:100%}}
+@keyframes fade{0%{opacity:0}100%{opacity:1}}
+#kemanasih {display:none;}
+body{background:#34495e;margin:0;padding:0;overflow:hidden}
+h1{position:absolute;left:0;right:0;font-family:'Changa', sans-serif;color:#fff;text-align:center;padding:3em 0 0;opacity:0;font-size:300%;z-index:99;margin:auto}
+h1 a:link,h1 a:visited,h1 a:link:hover,h1 a:visited:hover{color:#f3d971}
+svg{position:absolute;bottom:0;left:0;right:0;width:100%;height:100%;z-index:90}
+#footer-end{opacity:0;visibility:hidden}
+</style>
+<style type='text/css'>
+</style>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+<script type='text/javascript'>
+//<![CDATA[
+//CSS Ready
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("https://fonts.googleapis.com/css?family=Changa&display=swap");
+//]]>
+</script>
+<script language='JavaScript'>
+document.oncontextmenu =new Function("return false;")
+//<![CDATA[
+shortcut = {
+    all_shortcuts: {},
+    add: function (a, b, c) {
+        var d = {
+            type: "keydown",
+            propagate: !1,
+            disable_in_input: !1,
+            target: document,
+            keycode: !1
+        };
+        if (c)
+            for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);
+        else c = d;
+        d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(), e = function (d) {
+            d = d || window.event;
+            if (c.disable_in_input) {
+                var e;
+                d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
+                if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return
+            }
+            d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(), 188 == code && (e = ","), 190 == code && (e = ".");
+            var f = a.split("+"),
+                g = 0,
+                h = {
+                    "`": "~",
+                    1: "!",
+                    2: "@",
+                    3: "#",
+                    4: "$",
+                    5: "%",
+                    6: "^",
+                    7: "&",
+                    8: "*",
+                    9: "(",
+                    0: ")",
+                    "-": "_",
+                    "=": "+",
+                    ";": ":",
+                    "'": '"',
+                    ",": "<",
+                    ".": ">",
+                    "/": "?",
+                    "\\": "|"
+                },
+                i = {
+                    esc: 27,
+                    escape: 27,
+                    tab: 9,
+                    space: 32,
+                    "return": 13,
+                    enter: 13,
+                    backspace: 8,
+                    scrolllock: 145,
+                    scroll_lock: 145,
+                    scroll: 145,
+                    capslock: 20,
+                    caps_lock: 20,
+                    caps: 20,
+                    numlock: 144,
+                    num_lock: 144,
+                    num: 144,
+                    pause: 19,
+                    "break": 19,
+                    insert: 45,
+                    home: 36,
+                    "delete": 46,
+                    end: 35,
+                    pageup: 33,
+                    page_up: 33,
+                    pu: 33,
+                    pagedown: 34,
+                    page_down: 34,
+                    pd: 34,
+                    left: 37,
+                    up: 38,
+                    right: 39,
+                    down: 40,
+                    f1: 112,
+                    f2: 113,
+                    f3: 114,
+                    f4: 115,
+                    f5: 116,
+                    f6: 117,
+                    f7: 118,
+                    f8: 119,
+                    f9: 120,
+                    f10: 121,
+                    f11: 122,
+                    f12: 123
+                },
+                j = !1,
+                l = !1,
+                m = !1,
+                n = !1,
+                o = !1,
+                p = !1,
+                q = !1,
+                r = !1;
+            d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
+            for (var s = 0; k = f[s], s < f.length; s++) "ctrl" == k || "control" == k ? (g++, m = !0) : "shift" == k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] == code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e], e == k && g++);
+            if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d.cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d.preventDefault()), !1
+        }, this.all_shortcuts[a] = {
+            callback: e,
+            target: d,
+            event: c.type
+        }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type, e) : d["on" + c.type] = e
+    },
+    remove: function (a) {
+        var a = a.toLowerCase(),
+            b = this.all_shortcuts[a];
+        delete this.all_shortcuts[a];
+        if (b) {
+            var a = b.event,
+                c = b.target,
+                b = b.callback;
+            c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c["on" + a] = !1
+        }
+    }
+}, shortcut.add("Ctrl+U", function () {
+    top.location.href = "https://www.gitforge.in/"
+});
+//]]>
+</script>
+<noscript>
+<style type='text/css'>
+/* No Script */
+body,html{overflow:hidden}
+.noscript{background:#e74c3c;color:#fff;padding:8% 0 0 0;position:fixed;bottom:0;left:0;top:0;right:0;z-index:1000;height:auto;-webkit-transform:translateZ(0);transform:translateZ(0);overflow:hidden}
+.noscript p{margin:0;text-align:center;padding:0 20px 10px 20px;margin:auto;font-size:3rem;line-height:1.5;font-family:monospace;max-width:1010px;text-transform:uppercase;font-weight:700}
+.noscript p span{color:#ffe88b;font-size:10rem;line-height:normal;font-weight:normal}
+</style>
+</noscript>
+</head>
+<body class='loading'>
+<noscript>
+<div class='noscript'>
+<p><span>&#9888;</span></p>
+<p>Please activate Javascript To view the content of our site</p>
+<p>thank you</p>
+</div>
+</noscript>
+<h1>Navigate our site here <a href='https://www.gitforge.in/' onmouseover='window.location=this.href' target='_blank' title='GitForge'>GitForge</a></h1>
+<svg height='508px' viewBox='0 0 1226.887 908' width='1226.887px' xmlns='http://www.w3.org/2000/svg'>
+<g id='water'>
+<path d='M1226.887,908H1887V330.333c0,0-17.78-23.951-43.113-23.951s-50.667,32.724-144.667,32.724   s-99.333-32.724-177.333-32.724s-76.667,32.724-172,32.724s-166.77-31.173-218.174-31.173c-73.012,0-73.012,33.725-146.023,33.725   c-73.008,0-73.008-33.725-146.012-33.725c-73.011,0-73.011,33.725-146.019,33.725c-73.005,0-73.005-33.725-146.003-33.725   c-73.006,0-73.006,33.725-146.016,33.725c-73.008,0-73.008-33.725-146.012-33.725c-73.001,0-73.001,33.725-146.005,33.725   c-57.429,0-71.001-22.575-109.622-30.845c0,0-0.113-4.957-45.113-4.385s-83,24.505-129,26.572s-64.812-6.149-116.033-9.751   c-49.875-3.507-64.967-15.889-134.967-16.821s-237,55.572-237,55.572l2,547H0L1226.887,908z' fill='#00B6FF' id='leftWater'></path>
+<path d='M1887,908V607.943V307.886c-27.059,3.017-42.916,10.22-60.79,16.67   s-37.766,12.146-72.893,12.146c-40.485,0-60.728-7.568-80.971-15.138c-20.243-7.568-40.486-15.137-80.973-15.137   c-40.483,0-60.725,7.568-80.968,15.137c-20.242,7.569-40.485,15.138-80.971,15.138c-40.484,0-60.726-7.568-80.967-15.138   c-20.241-7.568-40.482-15.137-80.963-15.137c-40.486,0-60.729,7.568-80.971,15.137c-20.243,7.569-40.485,15.138-80.97,15.138   c-40.486,0-60.729-7.568-80.972-15.138c-20.242-7.568-40.483-15.137-80.967-15.137c-40.482,0-60.724,7.568-80.966,15.137   c-20.242,7.569-40.483,15.138-80.968,15.138c-31.848,0-72.604-26.805-121.579-27.69s-54.279,6.633-78.847,11.038   c-44.312,7.945-66.016,18.911-103.266,19.056s-83.045-30.716-137.045-29.648S228.299,337,185.887,337   c-42,0-106.792-29.067-158.5-29.067c-32.333,0-109,31.173-188,31.173s-75-32.724-158.5-32.724s-92.5,32.724-184.5,32.724   s-158.5-32.724-158.5-32.724l1.984,604.087L660.113,909l613.444-1H1887z' fill='#00B6FF' id='rightWater' opacity='0.7'></path>
+</g>
+<g id='bubbles'>
+<circle cx='623.879' cy='408.974' fill='#00AEF7' r='4.913'></circle>
+<circle cx='545.501' cy='747.773' fill='#00AEF7' r='4.913'></circle>
+<circle cx='592.4' cy='627.177' fill='#00AEF7' r='7.37'></circle>
+<circle cx='504.856' cy='602.164' fill='#00AEF7' r='7.37'></circle>
+<circle cx='530.887' cy='614.999' fill='#006FCF' r='5.527'></circle>
+<circle cx='686.885' cy='504.999' fill='#006FCF' r='3.825'></circle>
+<circle cx='622.773' cy='795.12' fill='#FFFFFF' r='3.685'></circle>
+<circle cx='472.697' cy='527.126' fill='#006FCF' r='3.685'></circle>
+</g>
+<g id='bubbles2'>
+<path d='M647.786,752.464c-2.035,0-3.685-1.65-3.685-3.686C644.101,738.023,658.502,752.464,647.786,752.464z' fill='#006FCF'></path>
+<circle cx='722.824' cy='556.717' fill='#006FCF' r='3.685'></circle>
+<circle cx='610.195' cy='430.975' fill='#006FCF' r='3.685'></circle>
+<circle cx='449.917' cy='538.738' fill='#FFFFFF' r='6.142'></circle>
+<circle cx='616.746' cy='470' fill='#FFFFFF' r='6.142'></circle>
+<circle cx='585.701' cy='684.795' fill='#FFFFFF' r='8.061'></circle>
+<circle cx='640.192' cy='818.792' fill='#FFFFFF' r='8.061'></circle>
+</g>
+<g id='bottle'>
+<path d='M589.59,332.821c6.882,1.926,13.794,3.701,20.812,5.024c4.953,0.352,9.882,0.345,14.836-0.011   c1.066-0.204,2.126-0.431,3.187-0.659c5.371-10.27,9.474-18.127,9.509-18.232l0.093-0.027c8.667-16.526-5.036-10.668,5.175-32.325   l10.401-19.835l-13.808-7.24l-10.467,19.961c-11.961,20.557-14.931,6.019-23.58,22.513l0.029,0.092   C605.686,302.203,597.821,317.157,589.59,332.821z' fill='#FFFFFF'></path>
+<rect fill='#C7A66F' height='18.461' transform='matrix(0.8856 0.4644 -0.4644 0.8856 196.4175 -269.9889)' width='10.258' x='641.23' y='254.555'></rect>
+<path d='M653.436,273.045c-0.365,0.695-1.232,0.967-1.927,0.602l-16.188-8.488   c-0.695-0.365-0.966-1.232-0.602-1.928l2.083-3.972c0.365-0.695,1.232-0.966,1.927-0.601l16.188,8.489   c0.695,0.364,0.966,1.23,0.602,1.926L653.436,273.045z' fill='#FFFFFF'></path>
+<path d='M579.017,352.949c-4.666,8.884-8.058,15.347-8.058,15.347c-1.54,2.937-0.408,6.566,2.529,8.106   l21.672,11.364c2.937,1.54,6.566,0.408,8.106-2.529c0,0,9.991-19.073,19.247-36.759   C608.212,351.517,593.521,353.153,579.017,352.949z' fill='#005FB8'></path>
+</g>
+<g id='numbers'>
+<path d='M571.062,450.443l-2.667-5.084l2.156-17.892l6.726-3.528l7.123,13.576l2.449-1.284l2.406,4.587   l-2.448,1.285l2.179,4.154l-6.043,3.17l-2.147-4.091L571.062,450.443z M578.76,440.555l-3.14-5.982   c-0.113-0.218-0.229-0.513-0.497-1.4c-0.217-0.716-0.42-1.479-0.528-2.213c0.044,0.688,0.075,1.424,0.061,2.301l-0.001,0.751   l-0.025,0.251l-0.767,8.862L578.76,440.555z' fill='#FFFFFF'></path>
+<path d='M594.011,506.102c0.185-0.711,0.411-1.449,0.63-2.151c2.141-6.315,5.303-8.751,10.062-8.423   c7.289,0.477,10.628,5.32,9.15,13.397c-0.276,1.484-0.645,2.906-1.114,4.304c-2.654,7.737-7.898,10.394-14.502,7.273   c-4.313-2.057-5.904-5.687-4.719-12.215C593.677,507.533,593.827,506.812,594.011,506.102z M600.506,509.085   c-0.353,1.644-0.47,2.373-0.544,3.077c-0.264,3.114,0.736,4.42,2.512,4.266c0.96-0.077,1.807-0.833,2.741-2.906   c0.277-0.65,0.529-1.346,1.018-2.954c0.288-0.829,0.489-1.608,0.632-2.44c0.354-1.644,0.471-2.373,0.544-3.076   c0.244-2.758-0.418-3.832-1.739-4.175c-1.288-0.333-2.388,0.285-3.514,2.814c-0.276,0.651-0.528,1.345-1.018,2.954   c-0.139,0.398-0.244,0.805-0.35,1.211C600.684,508.262,600.578,508.669,600.506,509.085z' fill='#006FCF'></path>
+<path d='M623.107,608.756l1.129-5.63l12.941-12.54l7.447,1.494l-3.016,15.032l2.71,0.544l-1.019,5.079   l-2.711-0.544l-0.923,4.6l-6.692-1.344l0.909-4.529L623.107,608.756z M635.314,605.922l1.33-6.625   c0.048-0.239,0.144-0.542,0.495-1.399c0.282-0.692,0.604-1.414,0.983-2.053c-0.398,0.564-0.838,1.154-1.402,1.826l-0.474,0.583   l-0.179,0.178l-6.176,6.401L635.314,605.922z' fill='#006FCF'></path>
+</g>
+</svg>
+<div id='kemanasih'>
+<div class='headertop' id='header' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
+<div class='section' id='headerdua'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'><a href='https://www.gitforge.in/' itemprop='url' title='GitForge Package'><span itemprop='name'>GitForge</span></a></h1>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<script type='text/javascript'>
+//<![CDATA[
+TweenMax.to("h1",1,{alpha:1,y:20,yoyo:!0,ease:Power3.easeInOut}),TweenMax.staggerTo("#water path",2,{x:"+=10",y:"+=5",repeat:-1,yoyo:!0,ease:Power3.easeInOut},1),TweenMax.to("#bottle",3,{x:"+=30",y:"+=5",rotation:"+=7",repeat:-1,yoyo:!0,ease:Power1.easeInOut},2),TweenMax.staggerTo("#numbers path",4,{rotation:-30,skewY:"10deg",x:"+=10",y:"+=5",repeat:-1,yoyo:!0,ease:Power1.easeInOut},"-=5"),TweenMax.staggerTo("#bubbles circle",4,{x:"+=1",y:"+=80",repeat:-1,yoyo:!0,ease:Power1.easeInOut},"-=5"),TweenMax.staggerTo("#bubbles2 circle",3,{x:"+=10",y:"+=40",repeat:-1,yoyo:!0,ease:Power1.easeInOut},"-=5"),TweenMax.to("#tent5",4,{morphSVG:"M450.156,820.511l0.395,0.462c34.244,40.2,30.831,65.406,18.13,86.909 c-0.001,0.002-0.003,0.005-0.004,0.007h84.433c0.009-0.056,0.019-0.106,0.028-0.162c1.949-11.366,3.12-25.264,1.164-36.695 c-2.091-14.146-8.913-35.893-26.464-64.532c-14.815-22.431-21.191-29.198-66.652-72.601c-61-57.914-54.765-51.116-61.914-61.358 c-16.548-25.645-15.705-60.353,4.333-87.092c15.819-21.144,34.798-28.843,56.219-33.275c8.384-1.736,14.551-9.302,14.253-18.149 c-0.333-9.89-8.622-17.638-18.513-17.304c-33.573,1.164-62.735,12.935-86.354,36.629c-23.05,23.077-36.875,54.064-36.968,91.268 c0.14,29.981,10.858,60.685,34.242,86.519C392.059,759.365,426.772,794.55,450.156,820.511z",repeat:-1,yoyo:!0,ease:Power1.easeInOut}),TweenMax.to("#tent4",3,{morphSVG:"M678.762,908c-7.375-7-10.719-9.452-10.704-18.699c0.039-17.91-1.99-31.691-5.165-47.461 c-2.837-14.484-8.394-29.914-11.583-39.278c-2.635-7.736-5.304-15.567-7.993-23.46c-5.376-15.775-10.838-31.801-16.299-47.826 c-25.11-73.119-24.338-68.769-27.206-79.148c-3.907-14.896-4.926-30.899-3.19-47.083c3.722-36.142,5.271-50.405,20.125-84.377 c6.7-16.029,8.475-17.166,10.567-26.349c2.475-10.863-11.223-15.921-19.68-11.264l-0.496,0.271 c-28.2,15.537-36.074,47.484-40.917,61.554c-5.392,15.665-10.905,34.927-15.036,54.552c-4.177,19.57-6.094,41.165-4.659,62.923 c1.43,22.687,3.889,41.979,15.028,86.276c4.238,16.854,15.19,48.619,18.667,65.369c1.736,8.366,5.298,22.469,7,30.667 c7.291,35.14,13.001,42.575-8.396,55.833c-6.003,3.72-51.41-2.645-58.072,7.5H678.762z",repeat:-1,yoyo:!0,ease:Power1.easeInOut}),TweenMax.to("#tent1",2,{morphSVG:"M405.637,642.917c0,0,2.25,1.084,4.5,2.583c38.333,21.834,61,53.5,60.75,80.167 c-0.228,2.635-0.039,5.346-2.25,24.833c-2.681,23.632-0.761,7.514-7.75,64.25c-0.708,5.752-1.671,13.099-2.25,18.75 c-1.01,9.87-5.218,31.077-7.968,45.077c-0.886,4.509-4.407,23.298-22.538,29.423h94.539c-0.658-0.31-2.571-1.919-3.22-2.25 c-1.964-1.018-1.257-5.26-1.562-7.375c-0.5-3.459,3.336-64.208,3.333-63.208c0.025-11.676,1.039-25.425,1.064-37.286 c0.264-53.723,1.586-59.657-1.473-75.706c-2.789-14.937-8.465-29.403-15.792-42.254c-11.888-21.014-29.788-40.621-53.315-55.898 c-14.672-9.366-29.065-15.318-44.653-19.242c-10.883-2.706-20.402,2.722-21.619,12.828 C384.138,628.345,395.996,637.312,405.637,642.917z",repeat:-1,yoyo:!0,ease:Power1.easeInOut}),TweenMax.to("#tent2",5,{morphSVG:"M698.706,908h72.34c-1.096-0.779-2.206-1.641-3.331-2.599 c-3.384-2.985-6.706-6.95-9.616-11.765c-12.827-22.479-4.942-43.119-0.125-64.463c2.116-9.53,5.021-21.135,6.943-28.909 c8.716-34.801,11.304-55.468,14.971-90.264c1.952-18.525,4.916-45.252,1-52.168c-1.544-2.727-6.5-6.917-6.5-6.917 c-7.43-5.265-16.876-1.355-18.833,1.751c-4.542,7.208-3.5,9.083-5.333,19.5l-1.4,8.69c0,0-0.719,4.456-0.766,5.06 c-0.249,3.212-10.683,41.219-13.667,52.083c-1.867,6.797-3.533,10.019-15.75,47.5c-17.994,55.205-25.143,68.466-24.142,95.311 C694.838,890.285,696.331,899.419,698.706,908z",repeat:-1,yoyo:!0,ease:Power1.easeInOut}),TweenMax.to("#tent3",3,{morphSVG:"M666.075,731.812c3.99,6.251,7.875,9.812,10,11.438c11.772,9.003,14.993,8.5,22.312,10.062 c12.938,1.625,18.401-0.703,17.167-7.646c-1.333-7.5-8.333-9.833-11.833-13c0,0-6.709-5.144-7.333-6 c-13.007-17.865-13.626-40.143-5.993-63.319c8.052-23.494,26.03-37.068,44.531-35.814c27.905,1.515,47.311,34.713,41.909,67.399 c-3.46,21.342-7.755,22.059-60.977,87.356c-14.96,18.373-20.292,25.379-29.22,40.961c-0.925,2.238-6.75,12.805-7.875,15 c-6.708,13.083-20.481,38.413-13.708,62.667c0.462,1.655,1.419,5.385,1.917,6.916l79.738,0.056 c-1.284-2.668-2.859-5.166-4.737-7.41l-0.39-0.465c-15.193-18.172-19.202-32.954-4.37-54.402 c35.395-51.118,62.788-80.826,73.049-105.114c9.218-22.019,12.586-48.238,8.223-74.45c-8.502-50.861-43.94-86.775-83.541-85.985 c-47.86,0.497-85.77,54.147-79.259,116.324C657.22,710.87,660.735,723.448,666.075,731.812z",repeat:-1,yoyo:!0,ease:Power1.easeInOut});
+//]]>
+</script>
+</body>
+</HTML>
