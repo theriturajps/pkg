@@ -1,0 +1,139 @@
+     body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      footer {
+        padding-top: 0 !important;
+      }
+
+      #data {
+        background: #fafafa;
+        border: #eee solid 1px;
+        padding: 12px;
+        word-break: break-word;
+      }
+
+      #main {
+        width: 100%;
+      }
+
+      #progress {
+        position: absolute;
+        margin-top: 0;
+      }
+
+      #title {
+        width: 100%;
+      }
+
+      #url {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      #url:focus {
+        border-bottom: 1px solid #2196f3;
+        box-shadow: 0 1px 0 0 #2196f3;
+      }
+
+      #url:focus+label {
+        color: #2196f3;
+      }
+
+      .black-text {
+        color: #000000 !important;
+      }
+
+      .max-lines {
+        float: right;
+        font-size: 12px;
+        padding-bottom: 16px;
+      }
+
+      .support {
+        text-align: center;
+        color: #9e9e9e;
+      }
+
+      .valign-top {
+        vertical-align: top;
+      }
+
+      /* Nav panel */
+      @media only screen and (max-width: 992px) {
+        nav .description {
+          width: 100%;
+          top: -56px !important;
+          display: block;
+          text-align: center;
+        }
+      }
+
+      @media only screen and (max-width: 601px) {
+        nav .nav-wrapper {
+          margin-top: 5px;
+          width: 100%;
+        }
+
+        nav .description {
+          top: -47px !important;
+        }
+
+        #data li {
+          margin-top: 5px;
+        }
+      }
+
+     
+
+      nav {
+        box-shadow: none;
+        -moz-box-shadow: none;
+      }
+
+      nav .brand-logo {
+        color: black;
+        font-weight: 500;
+        display: inline-table;
+        top: -10px;
+        float: left;
+      }
+
+      nav .brand-logo-small {
+        font-size: 1rem;
+      }
+
+      nav .brand-logo-small #header-logo {
+        position: relative;
+        top: 3px;
+        width: 22px;
+        height: 22px;
+      }
+
+      nav .brand-logo span {
+        font-weight: 100;
+      }
+
+      nav .description {
+        color: #757575;
+        top: 12px;
+        position: relative;
+      }
+
+      nav ul a {
+        color: black;
+      }
+
+      nav i {
+        color: #039be5;
+      }
