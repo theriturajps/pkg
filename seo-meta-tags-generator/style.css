@@ -1,0 +1,61 @@
+#gitforge_seo_generator {
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 8px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px 0px #056aff;
+}
+
+/* Make form fields display as blocks */
+textarea, select, button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Style the textareas */
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the select dropdowns */  
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the buttons */
+button {
+    padding: 8px 8px;
+    margin: 10px auto;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #056aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+
+Make things stack vertically on small screens
+@media (max-width: 600px) {
+  #gitforge_seo_generator {
+    padding: 8px;
+  }
+  
+  textarea, select, button {
+    width: 100%; 
+  }
+}

@@ -1,0 +1,68 @@
+.is-dark #robots_txt_Block {
+    background: #2d2d30;
+}
+
+#robots_txt_Block {
+      background-color: #fff;
+      padding: 8px;
+      border-radius: 4px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 0px 0px #056aff;
+  }
+  
+      .robots_txt_label {
+        display: block;
+        margin-bottom: 10px;
+      }
+  
+      .robots_txt_textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      .robots_txt_span {
+        color: #727272;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+  
+      .robots_txt_button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+  }
+  
+      .robots_txt_result_textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      .robots_txt_btn_copy {
+        background-color: #2196F3;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+  
+      .robots_txt_p_msg {
+        display: none;
+        margin-top: 10px;
+        font-weight: bold;
+      }
