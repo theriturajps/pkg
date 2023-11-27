@@ -1,0 +1,79 @@
+#advanced {
+    display: none;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .status {
+    height: 3px;
+    width: 3em;
+    border-radius: 1px;
+    background-color: inherit;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    margin: 10px auto;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  .copy-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #2ecc71;
+    color: #fff;
+  }
+
+  .open-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2ecc71;
+    background-color: #fff;
+  }
+
+  @keyframes success {
+    0% {
+      background-color: inherit;
+    }
+
+    10% {
+      background-color: rgb(18, 206, 96);
+    }
+
+    100% {
+      background-color: inherit;
+    }
+  }
