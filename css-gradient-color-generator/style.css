@@ -1,0 +1,92 @@
+.is-dark .wrapper {
+    background: #2d2d30;
+}
+    .wrapper {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 0 #056aff;
+}
+
+    .gradient-box {
+      height: 180px;
+      border-radius: 7px;
+      background: linear-gradient(to left top, #5665E9, #A271F8);
+      margin-bottom: 5px;
+    }
+
+    .options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+    .row {
+      margin-bottom: 5px;
+    }
+
+    .options p {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .select-box,
+    .palette {
+      width: 100%;
+    }
+
+    select, input[type="color"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+    .palette input[type="color"] {
+    height: 50px;
+    padding: 2px !important;
+    width: calc(100% / 7 - 5px);
+}
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttons button {
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .buttons .refresh {
+      background: #6C757D;
+    }
+
+    .buttons .refresh:hover {
+      background: #5f666d;
+    }
+
+    .buttons .copy {
+      background: #8A6CFF;
+    }
+
+    .buttons .copy:hover {
+      background: #704dff;
+    }
+
+    @media screen and (max-width: 432px) {
+      .wrapper {
+        padding: 12px;
+      }
+    }
+
