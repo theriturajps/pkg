@@ -1,5 +1,7 @@
+.is-dark .gitforge_webp_container {
+    background: #2d2d30;
+}
 .gitforge_webp_container {
-  background-color: #fff;
   box-shadow: 5px 5px 0px 0px #056aff;
   border-radius: 4px;
   padding: 12px;
