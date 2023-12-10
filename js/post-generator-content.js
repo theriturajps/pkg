@@ -1,4 +1,4 @@
-const generatedPostHTMLContent = `
+generatedPostHTMLContent = `
       <div class="separator" style="clear: both; text-align: center;">
         <img alt="${imageAlt}" border="0" data-original-height="533" data-original-width="800" src="${imageURL}" title="${imageTitle}" />
       </div>
