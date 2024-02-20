@@ -1,0 +1,13 @@
+.iCWr > *{margin: 0}
+.iCWr{display: flex;flex-direction: column;gap: 10px}
+.iCIn{color: #2F353B;outline: none;background: transparent;padding: 15px;outline: none;border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 5px;box-shadow: 2px 2px 0 0 #056aff}
+.iCCon{counter-reset: num-icon;display: flex;flex-wrap: wrap;gap: 10px}
+.iCCon > *{counter-increment: num-icon;position: relative;display: inline-flex;align-items: center;gap: 15px;width: calc(50% - 5px);background: transparent;padding: 15px;outline: none;border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 5px;box-shadow: 2px 2px 0 0 #056aff;overflow: hidden}
+.iCCon > *::before{content: counter(num-icon);position: absolute;top: 0;right: 0;background: #056aff;color: #fff;font-size: 11px;border-radius: 0 0 0 5px;padding: 0 2px;opacity: 0.6}
+.iCCon > * svg{flex-shrink: 0;width: 24px;height: 24px}
+.iCCon > * span{text-align: left;border-left: 1px solid rgba(0, 0, 0, 0.1);padding-left: 10px;opacity: 0.8;white-space: nowrap;text-overflow: ellipsis;overflow: hidden}
+svg.line,svg .line{fill: none !important;stroke: #08102b;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1}
+.is-dark svg.line,.is-dark svg{fill: none;stroke: #fffdfc}
+.is-dark span{color: #fffdfc}
+.is-dark svg{fill: #fffdfc}
+.is-dark .iCIn{color: #f6f7f8;}
