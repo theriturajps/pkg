@@ -1,1 +1,15 @@
-function copyC(e,t){var o=document.getElementById(e),n=document.getElementById(t),e=getSelection(),t=document.createRange();e.removeAllRanges(),t.selectNodeContents(n),e.addRange(t),document.execCommand("copy"),e.removeAllRanges(),o.classList.add("copied"),document.getElementById("toastNotif").innerHTML="<span>Copied to Clipboard!</span>",setTimeout(()=>{o.classList.remove("copied")},3e3)}
+function copyCode() {
+    const code = document.getElementById('codeToCopy').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+        const cpyBtn = document.getElementById('cpyBtn');
+        cpyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        cpyBtn.style.backgroundColor = 'green';
+
+        setTimeout(() => {
+            cpyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+            cpyBtn.style.backgroundColor = '#007bff';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
