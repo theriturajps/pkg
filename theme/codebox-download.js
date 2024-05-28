@@ -1,0 +1,1 @@
+function downD(e){var t=document.getElementById(e).innerText,n=new Blob([t],{type:"text/plain"}),d=URL.createObjectURL(n),o=document.createElement("a");o.href=d,o.download=e+".txt",document.body.appendChild(o),o.click(),document.body.removeChild(o),URL.revokeObjectURL(d)}
