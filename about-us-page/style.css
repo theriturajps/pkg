@@ -1,151 +1,53 @@
-.is-dark .AboutUsContainer {
-    background: #2d2d30;
-}
-.AboutUsContainer {
-    margin: 20px auto;
-    padding: 8px;
-    border-radius: 4px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0px 0px #056aff;
-}
-
-    .label-title {
-      display: block;
-      margin-top: 10px;
-    }
-
-    #WebsiteName{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #FacebookID{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  ..drK .AboutUsContainer {
+      background: #2d2d30;
   }
-
-  #TwitterID{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .AboutUsContainer {
+      margin: 20px auto;
+      padding: 8px;
+      border-radius: 4px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 0px 0px #056aff;
   }
-
-  #InstagramID{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  #TelegramID{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-    #WebsiteCategory{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-    #WebsiteURL{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #AuthorName{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #AuthorMail{
-    height: 35px;
-    width: 100%;
-    padding: 10px;
-    padding-left: 8px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-    #WebsiteMail{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #WebsiteDescription{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #WebsiteType{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    #WebsiteSpeciality{
-      height: 35px;
-      width: 100%;
-      padding: 10px;
-      padding-left: 8px !important;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
   
-    textarea {
-        height: 200px;
-        width: 100%;
-        padding: 10px;
-        padding-left: 8px !important;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-    .copy-button {
-      display: block;
-      margin-top: 20px;
-    }
-
-    .AboutUsButton {
+  .label-title {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #WebsiteName,
+  #ContactNumber,
+  #ExperienceYear,
+  #WebsiteMission,
+  #WebsiteURL,
+  #OwnerName,
+  #AuthorMail,
+  #WebsiteEmail,
+  #WebsiteService,
+  #WebsiteType,
+  #WebsiteSpeciality {
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 8px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 8px !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .copy-button {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  .AboutUsButton {
     padding: 8px 8px;
     margin: 10px auto;
     font-size: 12px;
@@ -159,4 +61,4 @@
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
+  }
