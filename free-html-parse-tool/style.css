@@ -1,5 +1,4 @@
-#parser2{position:relative;overflow:hidden}
-#parser2 .btn,#parser2 .btn:active{background-image:none}
+#parser2 {position: relative;overflow: hidden;border: 2px solid #505050;margin: 0 auto;border-radius: 0.4rem;width: calc(100% - 25px);padding: 8px 8px;}#parser2 .btn,#parser2 .btn:active{background-image:none}
 #parser2 .btn{font-weight:400;padding:6px 12px;margin-bottom:5px;font-size:14px;line-height:1.42857143;text-align:center;white-space:nowrap;-ms-touch-action:manipulation;touch-action:manipulation;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:0;border-radius:4px;cursor:pointer;transition:all .3s}
 #parser2 .btn:active:focus,#parser2.btn:focus{outline:0}
 #parser2 .btn:focus,#parser2 .btn:hover{color:#333;text-decoration:none;outline:0}
