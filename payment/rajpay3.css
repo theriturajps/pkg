@@ -1,4 +1,4 @@
-.payPopUp {
+div.payPopUp {
     font-family: 'Roboto', sans-serif;
     display: none;
     position: fixed;
@@ -16,7 +16,7 @@
     user-select:none
 }
 
-.popCnt {
+div.popCnt {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 8px;
@@ -39,7 +39,7 @@
     }
 }
 
-.popHdr {
+div.popHdr {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,20 +48,20 @@
     margin-bottom: 10px;
 }
 
-.popHdr .popHdr2 {
+h2.popHdr2 {
     margin: 0 !important;
     font-size: 18px !important;
     color: #333 !important;
 }
 
-.popCbtn {
+span.popCbtn {
     cursor: pointer;
     font-size: 20px;
     color: #333;
     transition: color 0.3s;
 }
 
-.popCbtn:hover {
+span.popCbtn:hover {
     color: #ff4d4d;
 }
 
@@ -71,13 +71,13 @@ h3.popHdr3 {
     color: #444;
 }
 
-.purDtl .proPrc {
+span.proPrc {
     font-size: 20px;
     font-weight: 600;
     color: #007bff;
 }
 
-.payMd {
+div.payMd {
     margin-top: 20px;
 }
 
@@ -90,6 +90,7 @@ h3.popHdr3 {
 
 span.payMtd.PayBtn {
     width: 100%;
+    max-width: 375px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -112,19 +113,18 @@ img.payMdLgo {
     border-radius: 0.2rem;
 }
 
-.PayBtn {
+span.PayBtn {
     background-color: #333;
     color: #fffdfd;
     font-weight: bold;
 }
 
-.PayBtn:hover {
+span.PayBtn:hover {
     background-color: #36d3d339;
     color: #000000;
 }
 
-.payIfo,
-.CnfrTxt {
+p.payIfo, p.CnfrTxt {
     font-size: 12px;
     color: #666;
     margin-top: 10px;
@@ -135,17 +135,16 @@ a {
     text-decoration: none;
 }
 
-.payIfo .payAlnk,
-.CnfrTxt .payAlnk {
+p.payIfo a.payAlnk, p.CnfrTxt a.payAlnk {
     color: #007bff;
 }
 
-.payIfo .payAlnk:hover,
-.CnfrTxt .payAlnk:hover {
+p.payIfo a.payAlnk:hover,
+p.CnfrTxt a.payAlnk:hover {
     text-decoration: none;
 }
 
-p.CprtTxt, .payAlnk {
+p.CprtTxt, a.payAlnk {
     margin: 10px 0 auto;
     font-size: 10px;
     text-align: center;
