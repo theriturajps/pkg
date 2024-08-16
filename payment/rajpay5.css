@@ -81,10 +81,10 @@ div.payMd {
     margin-top: 20px;
 }
 
-h3.popHdr3 {
-    margin: 0;
-    font-size: 14px;
-    color: #555;
+h3.poHdrM3 {
+    margin: 0 !important;
+    font-size: 14px !important;
+    color: #555 !important;
     margin-top: 10px;
     margin-bottom: 10px;
 }
