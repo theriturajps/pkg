@@ -50,7 +50,7 @@
 
 .popHdr .popHdr2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 18px !important;
     color: #333;
 }
 
@@ -67,7 +67,7 @@
 
 .purDtl .popHdr3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 16px !important;
     color: #444;
 }
 
@@ -89,17 +89,18 @@
 }
 
 span.payMtd.PayBtn {
-    width: calc(100% - 21px);
+    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     display: flex;
-    max-height: 0.9rem;
+    max-height: 2.5rem !important;
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 14px !important;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
