@@ -1,0 +1,95 @@
+        #qr-container {
+            background-color: #F7F7F7;
+            border-radius: 0.4rem;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, .2);
+            padding: 8px;
+            max-width: 360px;
+            width: 90%;
+            color: #000000;
+            text-align: center;
+        }
+        #qr-container h2 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        #qr-container textarea,
+        #qr-container input,
+        #qr-container select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 0.4rem;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            outline: none;
+        }
+        textarea#text-input {
+            height: 6rem;
+        }
+        #qr-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        #qr-container button:hover {
+            background-color: #218838;
+        }
+        #qr-preview {
+            margin-top: 20px;
+            display: none;
+        }
+        #qr-preview canvas {
+            margin: 0 auto;
+            display: block;
+            border-radius: 0.4rem;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        #color-picker {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #color-picker label {
+            flex-grow: 1;
+            font-size: 0.9rem;
+        }
+        #color-picker input {
+            width: auto;
+            cursor: pointer;
+        }
+        #qr-preview button {
+            margin-top: 8px;
+            background-color: #007bff;
+            padding: 10px 0;
+            border-radius: 0.4rem;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        #qr-preview button:hover {
+            background-color: #0056b3;
+        }
+        @media screen and (max-width: 480px) {
+            #qr-container {
+                padding: 15px;
+            }
+            #qr-container h2 {
+                font-size: 1.2rem;
+            }
+            #qr-container button {
+                font-size: 0.9rem;
+            }
+        }
